@@ -1,0 +1,38 @@
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5em;
+  justify-content: space-between;
+}
+
+.new-tweet-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+  font-family: 'Bungee';
+}
+
+textarea {
+  resize: none;
+  border: none;
+  background-color: #f4f1ec;
+  border-bottom: 5px solid black;
+  padding-top: 1em;
+  outline: none;
+}
+
+.submit-button {
+  transition-duration: 0.4s;
+  border-radius: 3px;
+  background-color: teal;
+  color:whitesmoke;
+  font-size: 30px;
+}
+
+
