@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css">
     <link rel="stylesheet" href="styles/header.css" type="text/css">
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css">
+    <link rel="stylesheet" href="/styles/tweet-layout.css" type="text/css">
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -40,7 +41,7 @@
         </span>  
     </nav>
 
-    <header>
+    <header class="main-header">
       <div class="user-profile">
         <div>
             <img src="/images/profile-hex.png"> 
@@ -56,17 +57,35 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
         <form class="new-tweet-form" method="POST" action="/tweets">
           <br>
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text" placeholder="Hello world."></textarea>
+          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <footer>
             <button class="submit-button" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </footer>
         </form>
       </section>
+      <br>
+        <article class="tweet">
+          <header>
+            <div>
+              <img src = "/images/profile-hex.png">
+              <h3>Idla Appleton</h3>
+            </div>  
+              <h3>@Mrs.Appleton'sApples</h3>
+          </header>
+          <p>I am now going to write a tweet that is exactly one hundred and forty characters. It is not so hard to type out that many characters. There!</p>
+          <footer>
+            <p>10 days ago</p>
+            <span class="tweet-icons">
+              <span><i class="fas fa-flag"></i></span>
+              <span><i class="fas fa-retweet"></i></span>
+              <span><i class="fas fa-heart"></i></span>
+            </span>
+          </footer>
+      </section>
     </main>
   </body>
 </html>
+
