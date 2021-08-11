@@ -24,36 +24,34 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- App JS -->
-    <script src="/scripts/client.js"></script>
-    <script src="/scripts/composer-character-counter.js"></script>
-
+    
   </head>
-
+  
   <body>
     <!-- Top nav bar (fixed) -->
     <nav class="navbar-container">
       <span id="logo">tweeter</span>
-        <span class="new-tweet-set">
-          <span>Write a new tweet</span>
-          <span id="angle-double-down"><i class="fas fa-angle-double-down"></i></span>
-        </span>  
+      <span class="new-tweet-set">
+        <span>Write a new tweet</span>
+        <span id="angle-double-down"><i class="fas fa-angle-double-down"></i></span>
+      </span>  
     </nav>
-
+    
     <header class="main-header">
       <div class="user-profile">
         <div>
-            <img src="/images/profile-hex.png"> 
+          <img src="/images/profile-hex.png"> 
         </div>
         <div>
-            <h2>Your Name</h2>
+          <h2>Your Name</h2>
         </div>
       </div>
     </header>
-
     
-
+    
+    
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
@@ -67,25 +65,14 @@
         </form>
       </section>
       <br>
-        <article class="tweet">
-          <header>
-            <div>
-              <img src = "/images/profile-hex.png">
-              <h3>Idla Appleton</h3>
-            </div>  
-              <h3>@Mrs.Appleton'sApples</h3>
-          </header>
-          <p>I am now going to write a tweet that is exactly one hundred and forty characters. It is not so hard to type out that many characters. There!</p>
-          <footer>
-            <p>10 days ago</p>
-            <span class="tweet-icons">
-              <span><i class="fas fa-flag"></i></span>
-              <span><i class="fas fa-retweet"></i></span>
-              <span><i class="fas fa-heart"></i></span>
-            </span>
-          </footer>
+      <section id="tweets-container">
       </section>
     </main>
+    <!-- App JS -->
+    <script src="/scripts/client.js"></script>
+    <script src="/scripts/composer-character-counter.js"></script>
   </body>
-</html>
-
+  </html>
+  
+  
+  
