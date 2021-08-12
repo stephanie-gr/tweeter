@@ -6,11 +6,22 @@
 $(() =>  {
   //make sure button does not POST to /tweets
   const $form = $('.new-tweet-form');
-  $form.on('submit', onSubmit);
+
+  $form.on('submit', onSubmit)
 });
+
 
 const onSubmit = function(event) {
   event.preventDefault();
+
+  const stringBeforeSerialized = $("#tweet-text").val();
+  if (!stringBeforeSerialized) {
+    return alert('Type something in before you tweet!');
+  }
+
+  if (stringBeforeSerialized.length > 140) {
+    return alert('Your tweet is too long, try again!');
+  }
 
   const formData = $(this).serialize();
   console.log(formData);
@@ -42,12 +53,12 @@ const createTweetElement = function(tweetData) {
   <article class="tweet" id="tweets-container">
   <header>
   <div>
-  <img src=${tweetData.user.avatars}>
-  <h3>${tweetData.user.name}</h3>
+  <img src=${escape(tweetData.user.avatars)}>
+  <h3>${escape(tweetData.user.name)}</h3>
   </div>
-  <h3>${tweetData.user.handle}</h3>
+  <h3>${escape(tweetData.user.handle)}</h3>
   </header>
-  <p>${tweetData.content.text}</p>
+  <p>${escape(tweetData.content.text)}</p>
   <footer>
   <p>${timeago.format(tweetData.user.created_at)}</p>
   <span class="tweet-icons">
@@ -62,6 +73,7 @@ const createTweetElement = function(tweetData) {
 }
 
 const renderTweets = function(tweets) {
+
   const $tweetsContainer = $( '#tweets-container' );
   $tweetsContainer.empty();
   
@@ -70,6 +82,13 @@ const renderTweets = function(tweets) {
     $tweetsContainer.prepend($tweet);
   }
 }
+
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 
   
   
