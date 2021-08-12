@@ -55,11 +55,11 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <form class="new-tweet-form" method="POST" action="/tweets">
+        <form class="new-tweet-form" method="POST" action="/">
           <br>
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <footer>
-            <button class="submit-button" type="submit">Tweet</button>
+            <button class="submit-button" type="submit" for="new-tweet-form">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </footer>
         </form>

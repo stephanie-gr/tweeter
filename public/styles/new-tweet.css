@@ -1,12 +1,9 @@
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-.new-tweet {
+section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .new-tweet-form {

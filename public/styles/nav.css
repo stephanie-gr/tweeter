@@ -12,12 +12,6 @@
   width: 100%;
 }
 
-#logo {
-  font-family: 'Bungee';
-  font-size: 40px;
-  padding-top: 40px;
-}
-
 .new-tweet-set {
   display: flex;
   flex-direction: column;
@@ -27,4 +21,10 @@
 
 #angle-double-down {
   color: red;
+}
+
+#logo {
+  font-family: 'Bungee';
+  font-size: 40px;
+  padding-top: 40px;
 }

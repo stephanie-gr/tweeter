@@ -1,4 +1,5 @@
-header {
+/*main page header*/
+body header.main-header {
   display: flex;
   height: 400px;
   background-color: #a5b9c2;

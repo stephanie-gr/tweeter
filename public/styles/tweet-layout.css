@@ -1,4 +1,4 @@
-article.tweet {
+/* #tweets-container {
   display: flex;
   flex-direction: column;
   align-content: space-between;
@@ -8,6 +8,20 @@ article.tweet {
   padding-right: 1em;
   padding-left: 1em;
   height: 300px;
+} */
+
+article.tweet {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+  border: 5px solid black;
+  border-radius: 5px;
+  padding-top: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  height: 300px;
+  margin: 2em 2em 0em 0em;
 }
 
 article.tweet:hover {

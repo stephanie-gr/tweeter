@@ -1,6 +1,4 @@
 $( document ).ready(function() {
-  console.log('I, the DOM, am ready!');
-
   //create a new jQuery object for the textarea input(grabbing it by its ID)
   const $newTweetInput = $('#tweet-text');
 
