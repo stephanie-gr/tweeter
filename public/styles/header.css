@@ -2,7 +2,7 @@
 body header.main-header {
   display: flex;
   height: 400px;
-  background-color: #a5b9c2;
+  background-color: rgba(179, 161, 199, 1);
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
   justify-content: center;
   align-items: flex-end;

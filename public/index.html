@@ -33,11 +33,14 @@
     <!-- Top nav bar (fixed) -->
     <nav class="navbar-container">
       <span id="logo">tweeter</span>
-      <span class="new-tweet-set">
-        <span>Write a new tweet</span>
-        <span id="angle-double-down"><i class="fas fa-angle-double-down"></i></span>
-      </span>  
+      <div class="new-tweet-set">
+        <span><b>Write</b> a new tweet</span>
+        <div class="nav-buttons">
+          <button id="angle-double-down" for="tweet-text" type="submit"><i class="fas fa-angle-double-down"></i></button>
+        </div>
+      </div>  
     </nav>
+
     
     <header class="main-header">
       <div class="user-profile">
@@ -55,16 +58,18 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <div class="cognito" id="no-tweet-error">⛔️ There's nothing there to tweet! Please add some text. ⛔️</div>
-        <div class="cognito" id="tweet-length-error">⛔️ Your tweet is over the character limit. Be more concise! ⛔️</div>
-        <form class="new-tweet-form" method="POST" action="/">
-          <br>
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+        <div class="new-tweet-section">
+          <div class="cognito" id="no-tweet-error">⛔️ There's nothing there to tweet! Please add some text. ⛔️</div>
+          <div class="cognito" id="tweet-length-error">⛔️ Your tweet is over the character limit. Be more concise! ⛔️</div>
+          <form class="new-tweet-form" method="POST" action="/">
+            <br>
+            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <footer>
             <button class="submit-button" type="submit" for="new-tweet-form">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </footer>
         </form>
+        </div>
       </section>
       <br>
       <section id="tweets-container">

@@ -4,19 +4,27 @@
 * Reminder: Use (and do all your DOM work in) jQuery's document ready function
 */
 $(() =>  {
-  //grab and hide error messages for initial loading of page
-  const $lengthErrorMSG = $('#tweet-length-error');
-  $lengthErrorMSG.hide();
+  //grab the form and save it to jquery obj
+  const $form = $(".new-tweet-form");
 
-  const $noTweetErrorMSG = $('#no-tweet-error');
-  $noTweetErrorMSG.hide();
-
-  //make sure button does not POST to /tweets
-  const $form = $('.new-tweet-form');
-
+  //add event handler for $form, pass it callback
   $form.on('submit', onSubmit)
+
+  //grab new tweet button and save it to jquery obj
+  const $newTweetButton = $('#angle-double-down');
+
+  //add event handler for $newTweetButton, pass it callback
+  $newTweetButton.on('click', newTweetButton);
+    
 });
 
+const newTweetButton = function(event) {
+  const $form = $(".new-tweet-section");
+  const $textarea = $("textarea")
+  
+  $form.slideDown();
+  $textarea.focus().prop(autofocus);
+}
 
 const onSubmit = function(event) {
   event.preventDefault();
@@ -102,6 +110,8 @@ const escape = function (str) {
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
+
+
 
 
   

@@ -71,4 +71,5 @@ article.tweet footer {
 
 .tweet-icons span:hover {
   color: goldenrod;
+  cursor: pointer;
 }

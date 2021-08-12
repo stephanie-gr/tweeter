@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: row;
   height: 120px;
-  background-color: #4056A1;
+  background-color: rgba(179, 161, 199, 1);
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
   color: #FFFF;
   padding-left: 1.5em;
   padding-right: 1.5em;
@@ -20,7 +21,16 @@
 }
 
 #angle-double-down {
-  color: red;
+  color: white;
+  background-color: rgba(179, 161, 199, 0);
+  margin: 0;
+  border: 0;
+  padding: 10px;
+}
+
+#angle-double-down:hover {
+  cursor: pointer;
+  color: rgba(240, 205, 9, 1);
 }
 
 #logo {
