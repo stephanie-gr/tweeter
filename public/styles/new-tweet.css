@@ -1,5 +1,6 @@
 section {
   display: flex;
+  flex-basis: content;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 2em;
@@ -34,6 +35,17 @@ textarea {
   background-color: teal;
   color:whitesmoke;
   font-size: 30px;
+}
+
+.cognito {
+  display: flex;
+  flex-basis: content;
+  border: 4.5px solid rgba(255, 0, 0, 1);
+  padding: 0.5em;
+  color:red;
+  font-weight: 600;
+  font-size: 30px;
+  display: none;
 }
 
 

@@ -55,6 +55,8 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
+        <div class="cognito" id="no-tweet-error">⛔️ There's nothing there to tweet! Please add some text. ⛔️</div>
+        <div class="cognito" id="tweet-length-error">⛔️ Your tweet is over the character limit. Be more concise! ⛔️</div>
         <form class="new-tweet-form" method="POST" action="/">
           <br>
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>

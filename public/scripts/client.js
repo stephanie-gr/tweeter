@@ -4,6 +4,13 @@
 * Reminder: Use (and do all your DOM work in) jQuery's document ready function
 */
 $(() =>  {
+  //grab and hide error messages for initial loading of page
+  const $lengthErrorMSG = $('#tweet-length-error');
+  $lengthErrorMSG.hide();
+
+  const $noTweetErrorMSG = $('#no-tweet-error');
+  $noTweetErrorMSG.hide();
+
   //make sure button does not POST to /tweets
   const $form = $('.new-tweet-form');
 
@@ -14,13 +21,20 @@ $(() =>  {
 const onSubmit = function(event) {
   event.preventDefault();
 
+  //validation checks for no tweet or too long of a tweet, respectively
+  const $lengthErrorMSG = $('#tweet-length-error');
+  $lengthErrorMSG.slideUp();
+
+  const $noTweetErrorMSG = $('#no-tweet-error');
+  $noTweetErrorMSG.slideUp();
+
   const stringBeforeSerialized = $("#tweet-text").val();
   if (!stringBeforeSerialized) {
-    return alert('Type something in before you tweet!');
+    return $noTweetErrorMSG.slideDown();
   }
 
   if (stringBeforeSerialized.length > 140) {
-    return alert('Your tweet is too long, try again!');
+    return $lengthErrorMSG.slideDown();
   }
 
   const formData = $(this).serialize();

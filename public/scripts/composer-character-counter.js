@@ -24,18 +24,7 @@ $( document ).ready(function() {
     
   })
 
-
-    
-    
-    
-    
-
-
-  // const $newTweetButton = $('.submit-button');
-
-  // $newTweetButton.on('click', () =>{
-  //   const $newTweetValue = $newTweetInput.val();
-  //   const $newTweet = $('<li>').text($newTweetValue);
-  // })
 });
+
+
 
