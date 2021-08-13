@@ -26,7 +26,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   </head>
   
   <body>
@@ -41,40 +41,42 @@
       </div>  
     </nav>
 
-    
-    <header class="main-header">
-      <div class="user-profile">
-        <div>
-          <img src="/images/profile-hex.png"> 
+    <div class="head-and-tweets">
+
+      <header class="main-header">
+        <div class="user-profile">
+          <div>
+            <img id="user-photo" src="/images/profile-hex.png"> 
+          </div>
+          <div>
+            <h2>Your Name</h2>
+          </div>
         </div>
-        <div>
-          <h2>Your Name</h2>
-        </div>
-      </div>
-    </header>
-    
-    
-    
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <div class="new-tweet-section">
-          <div class="cognito" id="no-tweet-error">⛔️ There's nothing there to tweet! Please add some text. ⛔️</div>
-          <div class="cognito" id="tweet-length-error">⛔️ Your tweet is over the character limit. Be more concise! ⛔️</div>
-          <form class="new-tweet-form" method="POST" action="/">
-            <br>
-            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-          <footer>
-            <button class="submit-button" type="submit" for="new-tweet-form">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </footer>
-        </form>
-        </div>
-      </section>
-      <br>
-      <section id="tweets-container">
-      </section>
-    </main>
+      </header>
+      
+      
+      
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <div class="new-tweet-section">
+            <div class="cognito" id="no-tweet-error">⛔️ There's nothing there to tweet! Please add some text. ⛔️</div>
+            <div class="cognito" id="tweet-length-error">⛔️ Your tweet is over the character limit. Be more concise! ⛔️</div>
+            <form class="new-tweet-form" method="POST" action="/">
+              <br>
+              <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+            <footer>
+              <button class="submit-button" type="submit" for="new-tweet-form">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </footer>
+          </form>
+          </div>
+        </section>
+        <br>
+        <section id="tweets-container">
+        </section>
+      </main>
+    </div>
     <!-- App JS -->
     <script src="/scripts/client.js"></script>
     <script src="/scripts/composer-character-counter.js"></script>

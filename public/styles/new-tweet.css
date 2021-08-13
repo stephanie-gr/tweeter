@@ -1,55 +1,124 @@
-section {
-  display: flex;
-  flex-basis: content;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 2em;
-  margin-bottom: 2em;
+/* styling for tablet screen and down */
+@media only screen and (max-width: 1024px) {
+  section {
+    display: flex;
+    flex-basis: content;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  
+  .new-tweet-section {
+    display: none;
+  }
+  
+  .new-tweet-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+    font-family: 'Bungee';
+  }
+  
+  textarea {
+    resize: none;
+    border: none;
+    background-color: #f4f1ec;
+    border-bottom: 5px solid black;
+    padding-top: 1em;
+    outline: none;
+  }
+  
+  .submit-button {
+    transition-duration: 0.4s;
+    border-radius: 3px;
+    background-color: teal;
+    color:whitesmoke;
+    font-size: 30px;
+  }
+  
+  .cognito {
+    display: flex;
+    flex-basis: content;
+    border: 4.5px solid rgba(255, 0, 0, 1);
+    padding: 0.5em;
+    color:red;
+    font-weight: 600;
+    font-size: 30px;
+    display: none;
+  }
 }
 
-.new-tweet-section {
-  display: none;
+/* styling for laptop screen and up */
+@media only screen and (min-width:1024px) {
+  .head-and-tweets {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+  }
+  .container {
+    display: flex;
+    flex-basis: content;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 0vw;
+    margin-left: 25vw;
+    margin-bottom: 2em;
+    padding-top: 10vw;
+    width: 75vw;
+  }
+  
+  .new-tweet-section {
+    display: none;
+  }
+  
+  .new-tweet-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+    font-family: 'Bungee';
+  }
+  
+  textarea {
+    resize: none;
+    border: none;
+    background-color: #f4f1ec;
+    border-bottom: 5px solid black;
+    padding-top: 1em;
+    outline: none;
+  }
+  
+  .submit-button {
+    transition-duration: 0.4s;
+    border-radius: 3px;
+    background-color: teal;
+    color:whitesmoke;
+    font-size: 30px;
+  }
+  
+  .cognito {
+    display: flex;
+    flex-basis: content;
+    border: 4.5px solid rgba(255, 0, 0, 1);
+    padding: 0.5em;
+    color:red;
+    font-weight: 600;
+    font-size: 30px;
+    display: none;
+  }
 }
-
-.new-tweet-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1em;
-  font-family: 'Bungee';
-}
-
-textarea {
-  resize: none;
-  border: none;
-  background-color: #f4f1ec;
-  border-bottom: 5px solid black;
-  padding-top: 1em;
-  outline: none;
-}
-
-.submit-button {
-  transition-duration: 0.4s;
-  border-radius: 3px;
-  background-color: teal;
-  color:whitesmoke;
-  font-size: 30px;
-}
-
-.cognito {
-  display: flex;
-  flex-basis: content;
-  border: 4.5px solid rgba(255, 0, 0, 1);
-  padding: 0.5em;
-  color:red;
-  font-weight: 600;
-  font-size: 30px;
-  display: none;
-}
+ 
 
 

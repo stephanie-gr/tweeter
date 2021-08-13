@@ -1,19 +1,60 @@
 /*main page header*/
-body header.main-header {
-  display: flex;
-  height: 400px;
-  background-color: rgba(179, 161, 199, 1);
-  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
-  justify-content: center;
-  align-items: flex-end;
-  padding-top: 5em;
-  width: 100%;
-  margin-top: 90px;
+
+/* styling for tablet screen and down */
+@media only screen and (max-width: 1024px) {
+  body header.main-header {
+    display: flex;
+    height: 400px;
+    background-color: rgba(179, 161, 199, 1);
+    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 5em;
+    width: 100%;
+    margin-top: 90px;
+  }
+  
+  .user-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: black;
+  }
+  
+  #user-photo {
+    padding: 0em;
+    align-self: flex-end;
+  }
 }
 
-.user-profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* styling for computer screen and up */
+@media only screen and (min-width: 1024px) {
+  .head-and-tweets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  body header.main-header {
+    width: 25vw;
+    position: fixed;
+    border-radius: 10px;
+    margin-left: 1.5em;
+    margin-top: 160px;
+    background-color: rgba(179, 161, 199, 1);
+    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+  }
+  
+  .user-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: black;
+    overflow: hidden;
+  }
 }
+
+
+ 

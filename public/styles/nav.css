@@ -1,40 +1,87 @@
-.navbar-container {
-  display: flex;
-  flex-direction: row;
-  height: 120px;
-  background-color: rgba(179, 161, 199, 1);
-  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
-  color: #FFFF;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  width: 100%;
+/* styling for tablet screen and down */
+@media only screen and (max-width: 1024px) {
+  .navbar-container {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    background-color: rgba(179, 161, 199, 1);
+    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+    color: #FFFF;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .new-tweet-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+  }
+  
+  #angle-double-down {
+    color: white;
+    background-color: rgba(179, 161, 199, 0);
+    margin: 0;
+    border: 0;
+    padding: 10px;
+  }
+  
+  #angle-double-down:hover {
+    cursor: pointer;
+    color: rgba(240, 205, 9, 1);
+  }
+  
+  #logo {
+    font-family: 'Bungee';
+    font-size: 40px;
+    padding-top: 40px;
+  }
 }
 
-.new-tweet-set {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 30px;
-}
-
-#angle-double-down {
-  color: white;
-  background-color: rgba(179, 161, 199, 0);
-  margin: 0;
-  border: 0;
-  padding: 10px;
-}
-
-#angle-double-down:hover {
-  cursor: pointer;
-  color: rgba(240, 205, 9, 1);
-}
-
-#logo {
-  font-family: 'Bungee';
-  font-size: 40px;
-  padding-top: 40px;
+/* styling for laptop screen and up */
+@media only screen and (min-width: 1024px) {
+  .navbar-container {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    background-color: rgba(179, 161, 199, 1);
+    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+    color: #FFFF;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .new-tweet-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+  }
+  
+  #angle-double-down {
+    color: white;
+    background-color: rgba(179, 161, 199, 0);
+    margin: 0;
+    border: 0;
+    padding: 10px;
+  }
+  
+  #angle-double-down:hover {
+    cursor: pointer;
+    color: rgba(240, 205, 9, 1);
+  }
+  
+  #logo {
+    font-family: 'Bungee';
+    font-size: 40px;
+    padding-top: 40px;
+  }
 }

@@ -3,6 +3,7 @@
 * jQuery is already loaded
 * Reminder: Use (and do all your DOM work in) jQuery's document ready function
 */
+
 $(() =>  {
   //grab the form and save it to jquery obj
   const $form = $(".new-tweet-form");
@@ -44,6 +45,9 @@ const onSubmit = function(event) {
   if (stringBeforeSerialized.length > 140) {
     return $lengthErrorMSG.slideDown();
   }
+
+  const $form = $(".new-tweet-section");
+  $form.slideUp();
 
   const formData = $(this).serialize();
   console.log(formData);
