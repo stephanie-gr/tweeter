@@ -15,3 +15,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+!["Screenshot of landing page for tablet view"](https://github.com/stephanie-gr/tweeter/blob/main/docs/Landing%20page%20for%20tablet%20screen.png?raw=true)
+
+!["Screenshot of tweet display for desktop"](https://github.com/stephanie-gr/tweeter/blob/main/docs/tweet%20page%20for%20desktop%20screen.png?raw=true)
