@@ -16,6 +16,8 @@ $(() =>  {
 
   //add event handler for $newTweetButton, pass it callback
   $newTweetButton.on('click', newTweetButton);
+
+  fetchTweets();
     
 });
 
